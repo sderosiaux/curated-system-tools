@@ -18,10 +18,11 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 - [ifstat](https://linux.die.net/man/1/ifstat) : like iostat, vmstat, but for network interfaces
 - [netstat](https://linux.die.net/man/8/netstat) : details about all the network connections of the system
 - [dstat](http://dag.wiee.rs/home-made/dstat/) :  *stat all-in-one
-- [sar](http://linuxcommand.org/man_pages/sar1.html) : monitor network, devices
+- [sar](http://linuxcommand.org/man_pages/sar1.html) : monitor network, devices (`sar -n DEV 2`)
 - [iotop](http://guichaz.free.fr/iotop/) : top, with i/o !
 - [iperf](https://iperf.fr/) : test maximum bandwidth (tcp/udp)
-
+- [hdparm](https://linux.die.net/man/8/hdparm) : check drives settings
+- [ethtool](http://linuxcommand.org/man_pages/ethtool8.html) : check the ethernet cards settings (speed, duplex etc. if you have a doubt)
 
 ## Java specifics
 
