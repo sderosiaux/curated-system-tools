@@ -2,8 +2,10 @@
 
 ## Classic
 
-- top
-- ps auxwww
+> A linux is assumed. On OSX, options can be way different.
+
+- `top cw` : something's taking up all the cpu or mem ?
+- `ps fauxww` : list of all processes with command line + hierarchy
 
 ## System resources
 
