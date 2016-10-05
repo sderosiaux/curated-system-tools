@@ -5,6 +5,7 @@
 > A linux is assumed. On OSX, options can be way different.
 
 - `top cw` : something's taking up all the cpu or mem ?
+- `htop` : a colorful top, easy to play with
 - `ps fauxww` : list of all processes with command line + hierarchy
 
 ## System resources
