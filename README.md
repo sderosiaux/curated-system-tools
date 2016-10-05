@@ -1,4 +1,4 @@
-A list of tools to help debugging issues or simply check what's going on on the system.
+A list of tools to help debugging issues or simply check what's going on in the system.
 
 ## Classic
 
