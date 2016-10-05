@@ -33,3 +33,9 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 - [jvisualvm](https://visualvm.github.io/) : packaged with java, ultra useful
 - [jmc](https://docs.oracle.com/javacomponents/jmc-5-5/jmc-user-guide/jmc.htm) : Java Mission Control. A better jvisualvm
 
+
+## System tuning
+
+`/proc/sys/vm/vfs_cache_pressure`
+
+
