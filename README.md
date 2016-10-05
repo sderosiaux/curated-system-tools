@@ -7,6 +7,7 @@ A list of tools to help debugging issues or simply check what's going on on the 
 - `top cw` : something's taking up all the cpu or mem ?
 - `htop` : a colorful top, easy to play with
 - `ps fauxww` : list of all processes with command line + hierarchy
+- `free -h` : memory and swap
 
 ## System resources
 
@@ -37,5 +38,9 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 ## System tuning
 
 `/proc/sys/vm/vfs_cache_pressure`
+`/proc/sys/vm/swappiness`
 
+## Misc info
+
+`cat /proc/cpuinfo` : list of cpus of the system with details (type, MHz, cache size..)
 
