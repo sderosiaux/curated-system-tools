@@ -13,7 +13,7 @@ A list of tools to help debugging issues or simply check what's going on on the 
 List of tools used to look after system performances (mem, cpu, disks, network, processes, files..) :
 
 - [sysdig](http://www.sysdig.org/) : a console ui to monitor (live and snapshots) several aspects of the system
-- [iostat](http://linuxcommand.org/man_pages/iostat1.html) : i/o accesses
+- [iostat](http://linuxcommand.org/man_pages/iostat1.html) : i/o accesses `iostat -m -x -d 2`
 - [vmstat](http://linuxcommand.org/man_pages/vmstat8.html) : mem/swap/cpu
 - [ifstat](https://linux.die.net/man/1/ifstat) : like iostat, vmstat, but for network interfaces
 - [netstat](https://linux.die.net/man/8/netstat) : details about all the network connections of the system
