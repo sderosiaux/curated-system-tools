@@ -9,8 +9,8 @@
 
 List of tools used to look after system performances (mem, cpu, disks, network, processes, files..) :
 
-- [sysdig](http://www.sysdig.org/) :star: :star: :star: :star: :star: : a console ui to monitor (live and snapshots) several aspects of the system
-- [iostat](http://linuxcommand.org/man_pages/iostat1.html) :star: :star: :star: :star: : i/o accesses
+- [sysdig](http://www.sysdig.org/) : a console ui to monitor (live and snapshots) several aspects of the system
+- [iostat](http://linuxcommand.org/man_pages/iostat1.html) : i/o accesses
 - [sar](http://linuxcommand.org/man_pages/sar1.html) : monitor network, devices
 - [iotop](http://guichaz.free.fr/iotop/) : top, with i/o !
 - [vmstat](http://linuxcommand.org/man_pages/vmstat8.html) : mem/swap/cpu
