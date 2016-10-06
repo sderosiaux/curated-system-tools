@@ -42,5 +42,5 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 
 ## Misc info
 
-`cat /proc/cpuinfo` : list of cpus of the system with details (type, MHz, cache size..)
-
+- `cat /proc/cpuinfo` : list of cpus of the system with details (type, MHz, cache size..)
+- `lscpu` : shorter
