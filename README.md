@@ -8,6 +8,7 @@ A list of tools to help debugging issues or simply check what's going on in the 
 - `htop` : a colorful top, easy to play with
 - `ps fauxww` : list of all processes with command line + hierarchy
 - `free -h` : memory and swap
+- `df -h` : mount points
 
 ## System resources
 
