@@ -40,8 +40,9 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 
 ## System tuning
 
-`/proc/sys/vm/vfs_cache_pressure`
-`/proc/sys/vm/swappiness`
+- `/proc/sys/vm/vfs_cache_pressure`
+- `/proc/sys/vm/swappiness`
+- `/proc/sys/vm/zone_reclaim_mode` (Disable NUMA)
 
 ## Misc info
 
