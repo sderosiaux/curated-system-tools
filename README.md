@@ -24,7 +24,11 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 - [sar](http://linuxcommand.org/man_pages/sar1.html) : monitor network, devices `sar -n DEV 2`
 - [iotop](http://guichaz.free.fr/iotop/) : top, with i/o !
 - [iperf](https://iperf.fr/) : test maximum bandwidth (tcp/udp) `iperf -c server -f m -d`
+
+## Network
+
 - [dig](https://linux.die.net/man/1/dig) : query dns servers `dig +nocmd github.com any +multiline +noall +answer`
+- [traceroute](https://linux.die.net/man/8/traceroute): find the way to any host. This website is nice to test from multiple locations around the world: http://mtr.guru/
 
 ## System devices
 
