@@ -23,9 +23,10 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 - [netstat](https://linux.die.net/man/8/netstat) : details about all the network connections of the system `netstat -plut`
 - [ss](https://linux.die.net/man/8/netstat) : a bit like netstat, list all sockets (tcp/udp), their state `ss -ta` (TCP, all)
 - [dstat](http://dag.wiee.rs/home-made/dstat/) :  *stat all-in-one
-- [sar](http://linuxcommand.org/man_pages/sar1.html) : monitor network, devices `sar -n DEV 2`
+- [sar](http://linuxcommand.org/man_pages/sar1.html) : monitor network, devices `sar -n DEV 2` All commands in a nice pic: http://www.brendangregg.com/Perf/linux_observability_sar.png
 - [iotop](http://guichaz.free.fr/iotop/) : top, with i/o !
 - [iperf](https://iperf.fr/) : test maximum bandwidth (tcp/udp) `iperf -c server -f m -d`
+- [ulimit](http://ss64.com/bash/ulimit.html): memory, open files, and misc size limits for the user (often, the open file limit must be raised if the server contains hot apps)
 
 ## Network
 
