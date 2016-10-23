@@ -20,6 +20,7 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 - [vmstat](http://linuxcommand.org/man_pages/vmstat8.html) : mem/swap/cpu `vmstat 1`
 - [ifstat](https://linux.die.net/man/1/ifstat) : like iostat, vmstat, but for network interfaces
 - [netstat](https://linux.die.net/man/8/netstat) : details about all the network connections of the system `netstat -plut`
+- [ss](https://linux.die.net/man/8/netstat) : a bit like netstat, list all sockets (tcp/udp), their state `ss -ta` (TCP, all)
 - [dstat](http://dag.wiee.rs/home-made/dstat/) :  *stat all-in-one
 - [sar](http://linuxcommand.org/man_pages/sar1.html) : monitor network, devices `sar -n DEV 2`
 - [iotop](http://guichaz.free.fr/iotop/) : top, with i/o !
@@ -27,8 +28,9 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 
 ## Network
 
-- [dig](https://linux.die.net/man/1/dig) : query dns servers `dig +nocmd github.com any +multiline +noall +answer`
+- [dig](https://linux.die.net/man/1/dig): query dns servers `dig +short github.com` `dig +nocmd github.com any +multiline +noall +answer`
 - [traceroute](https://linux.die.net/man/8/traceroute): find the way to any host. This website is nice to test from multiple locations around the world: http://mtr.guru/
+- [host](https://linux.die.net/man/1/host): resolve dns/ip `host -t ANY github.com`
 
 ## System devices
 
