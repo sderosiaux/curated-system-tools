@@ -41,6 +41,10 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 
 - [lstopo](https://linux.die.net/man/1/lstopo): a wonderful tool to draw the topology of the server (show cpus, their caches, the physical sockets, the memory) into a nice big picture `lstopo --output-format txt -v`
 
+## Performance
+
+A tons of good links and presentations here: http://www.brendangregg.com/linuxperf.html.
+
 ## Java specifics
 
 - [jstat](http://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr017.html) : like iostat, vmstat, for java processes `jstat -gc -t -h30 [vmid] 1s : monitor Java GC`
