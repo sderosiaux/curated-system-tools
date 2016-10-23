@@ -10,7 +10,7 @@ A list of tools to help debugging issues or simply check what's going on in the 
 - `free -h` : memory and swap
 - `df -h` : mount points
 - `iptables -L -v` : firewall rules
-- `dmesg`: kernel messages. Can be fulfilled of iptables denied message :-) or other useful stuff to check in case of problems
+- `dmesg -T`: kernel messages. Can be fulfilled of iptables denied message :-) or other useful stuff to check in case of problems
 
 ## System resources
 
