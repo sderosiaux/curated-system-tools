@@ -11,6 +11,7 @@ A list of tools to help debugging issues or simply check what's going on in the 
 - `df -h` : mount points
 - `iptables -L -v` : firewall rules
 - `dmesg -T`: kernel messages. Can be fulfilled of iptables denied message :-) or other useful stuff to check in case of problems
+- `env`: list the environment variables
 
 ## System resources
 
