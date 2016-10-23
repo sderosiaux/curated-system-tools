@@ -37,12 +37,15 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 - [hdparm](https://linux.die.net/man/8/hdparm) : check drives settings `hdparm -t /dev/sda8`
 - [ethtool](http://linuxcommand.org/man_pages/ethtool8.html) : check the ethernet cards settings (speed, duplex etc. if you have a doubt) `ethtool eth0`
 
+## Topology
+
+- [lstopo](https://linux.die.net/man/1/lstopo): a wonderful tool to draw the topology of the server (show cpus, their caches, the physical sockets, the memory) into a nice big picture `lstopo --output-format txt -v`
+
 ## Java specifics
 
 - [jstat](http://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr017.html) : like iostat, vmstat, for java processes `jstat -gc -t -h30 [vmid] 1s : monitor Java GC`
 - [jvisualvm](https://visualvm.github.io/) : packaged with java, ultra useful
 - [jmc](https://docs.oracle.com/javacomponents/jmc-5-5/jmc-user-guide/jmc.htm) : Java Mission Control. A better jvisualvm
-
 
 ## System tuning
 
