@@ -64,3 +64,20 @@ A tons of good links and presentations here: http://www.brendangregg.com/linuxpe
 
 - `cat /proc/cpuinfo` : list of cpus of the system with details (type, MHz, cache size..)
 - `lscpu` : shorter
+
+## Network tuning
+
+Flags I grab here and there, not optimal or anything, just to know they exist.
+
+- `net.ipv4.tcp_slow_start_after_idle = 0`
+- `net.core.netdev_max_backlog = 5000`
+- `net.ipv4.tcp_no_metrics_save = 1`
+- `net.ipv4.tcp_sack = 1`
+- `net.ipv4.tcp_timestamps = 1`
+- `net.ipv4.tcp_window_scaling = 1`
+- `net.core.wmem_max=12582912`
+- `net.core.rmem_max=12582912`
+- `net.ipv4.tcp_rmem= 10240 87380 12582912`
+- `net.ipv4.tcp_wmem= 10240 87380 12582912`
+
+
