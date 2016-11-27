@@ -12,6 +12,7 @@ A list of tools to help debugging issues or simply check what's going on in the 
 - `iptables -L -v` : firewall rules
 - `dmesg -T`: kernel messages. Can be fulfilled of iptables denied message :-) or other useful stuff to check in case of problems
 - `env`: list the environment variables
+- `uptime`: checkout 1min/5min/15min load average
 
 ## System resources
 
@@ -20,6 +21,7 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 - [sysdig](http://www.sysdig.org/) : a console ui to monitor (live and snapshots) several aspects of the system `sudo sysdig 'proc.name=java' -w ~/sysdig.scap`
 - [iostat](http://linuxcommand.org/man_pages/iostat1.html) : i/o accesses `iostat -m -x -d 2`
 - [vmstat](http://linuxcommand.org/man_pages/vmstat8.html) : mem/swap/cpu `vmstat 1`
+- [mpstat](http://linuxcommand.org/man_pages/mpstat1.html) : check the stats for each cores, useful to spot single-threaded apps (if unbalanced) `mpstat -P ALL 1`
 - [ifstat](https://linux.die.net/man/1/ifstat) : like iostat, vmstat, but for network interfaces
 - [netstat](https://linux.die.net/man/8/netstat) : details about all the network connections of the system `netstat -putel`
 - [ss](https://linux.die.net/man/8/netstat) : a bit like netstat, list all sockets (tcp/udp), their state `ss -ta` (TCP, all)
@@ -80,4 +82,8 @@ Flags I grab here and there, not optimal or anything, just to know they exist.
 - `net.ipv4.tcp_rmem= 10240 87380 12582912`
 - `net.ipv4.tcp_wmem= 10240 87380 12582912`
 
+
+# Resources
+
+http://techblog.netflix.com/2015/11/linux-performance-analysis-in-60s.html
 
