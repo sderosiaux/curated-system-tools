@@ -13,7 +13,7 @@ A list of tools to help debugging issues or simply check what's going on in the 
 - `dmesg -T`: kernel messages. Can be fulfilled of iptables denied message :-) or other useful stuff to check in case of problems
 - `env`: list the environment variables
 - `uptime`: checkout 1min/5min/15min load average
-- `strace`: trace system calls and signals a program does (file open, read, stat, mmap, ...). `strace uptime 2>&1 | grep open`
+- `strace`: trace system calls and signals a program does (file open, read, stat, mmap, ...). `strace -e open uptime 2>&1`
 
 ## System resources
 
