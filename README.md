@@ -89,6 +89,8 @@ Flags I grab here and there, not optimal or anything, just to know they exist.
 - `net.ipv4.tcp_wmem = 10240 87380 12582912` (tcp sendbuffer buffer thresholds)
 - `net.ipv4.tcp_mem = 10000000 10000000 10000000` (tcp memory autotuning, define low/middle/max thresholds)
 
+https://wwwx.cs.unc.edu/~sparkst/howto/network_tuning.php
+
 # Resources
 
 http://techblog.netflix.com/2015/11/linux-performance-analysis-in-60s.html
