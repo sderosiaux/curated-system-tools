@@ -70,8 +70,9 @@ A tons of good links and presentations here: http://www.brendangregg.com/linuxpe
 - `/proc/sys/fs/nr_open`: hard limit of the current number of file handles the kernel can handle
 - `/proc/sys/fs/file-max`: current number of file handles the kernel can handle
 - `/proc/sys/fs/file-nr`: file handles currently opened/used file handles/the max (= file-max)
+- `/proc/sys/vm/nr_hugepages`: map huge memory pages (if using Java with a big heap, set also +UseLargePages)
 
-To change the `sys` properties: `sysctl -w fs.file-max=786046` or `/etc/sysctl.conf`.
+`sysctl` can be used to change the values: `sysctl -w fs.file-max=786046`. Or `/etc/sysctl.conf`.
 
 ## Network tuning
 
