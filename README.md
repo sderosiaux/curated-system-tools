@@ -30,7 +30,7 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 - [sar](http://linuxcommand.org/man_pages/sar1.html) : monitor network, devices `sar -n DEV 2` All commands in a nice pic: http://www.brendangregg.com/Perf/linux_observability_sar.png
 - [iotop](http://guichaz.free.fr/iotop/) : top, with i/o !
 - [iperf](https://iperf.fr/) : test maximum bandwidth (tcp/udp) `iperf -c server -f m -d`
-- [ulimit](http://ss64.com/bash/ulimit.html): memory, open files, and misc size limits for the user (often, the open file limit must be raised if the server contains hot apps)
+- [ulimit](http://ss64.com/bash/ulimit.html): memory, open files, and misc size limits for the user (often, the open file limit must be raised if the server contains hot apps) `ulimit -n 2000000` (open file descriptors)
 
 ## Network
 
