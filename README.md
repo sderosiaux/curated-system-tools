@@ -85,8 +85,9 @@ Flags I grab here and there, not optimal or anything, just to know they exist.
 - `net.ipv4.tcp_window_scaling = 1`
 - `net.core.wmem_max = 12582912`
 - `net.core.rmem_max = 12582912`
-- `net.ipv4.tcp_rmem = 10240 87380 12582912`
-- `net.ipv4.tcp_wmem = 10240 87380 12582912`
+- `net.ipv4.tcp_rmem = 10240 87380 12582912` (tcp receive buffer thresholds)
+- `net.ipv4.tcp_wmem = 10240 87380 12582912` (tcp sendbuffer buffer thresholds)
+- `net.ipv4.tcp_mem = 10000000 10000000 10000000` (tcp memory autotuning, define low/middle/max thresholds)
 
 # Resources
 
