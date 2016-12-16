@@ -67,6 +67,11 @@ A tons of good links and presentations here: http://www.brendangregg.com/linuxpe
 
 - `cat /proc/cpuinfo` : list of cpus of the system with details (type, MHz, cache size..)
 - `lscpu` : shorter
+- `/proc/sys/fs/nr_open`: hard limit of the current number of file handles the kernel can handle
+- `/proc/sys/fs/file-max`: current number of file handles the kernel can handle
+- `/proc/sys/fs/file-nr`: file handles currently opened/used file handles/the max (= file-max)
+
+To change the `sys` properties: `sysctl -w fs.file-max=786046` or `/etc/sysctl.conf`.
 
 ## Network tuning
 
@@ -78,11 +83,10 @@ Flags I grab here and there, not optimal or anything, just to know they exist.
 - `net.ipv4.tcp_sack = 1`
 - `net.ipv4.tcp_timestamps = 1`
 - `net.ipv4.tcp_window_scaling = 1`
-- `net.core.wmem_max=12582912`
-- `net.core.rmem_max=12582912`
-- `net.ipv4.tcp_rmem= 10240 87380 12582912`
-- `net.ipv4.tcp_wmem= 10240 87380 12582912`
-
+- `net.core.wmem_max = 12582912`
+- `net.core.rmem_max = 12582912`
+- `net.ipv4.tcp_rmem = 10240 87380 12582912`
+- `net.ipv4.tcp_wmem = 10240 87380 12582912`
 
 # Resources
 
