@@ -37,6 +37,7 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 - [dig](https://linux.die.net/man/1/dig): query dns servers `dig +short github.com` `dig +nocmd github.com any +multiline +noall +answer`
 - [traceroute](https://linux.die.net/man/8/traceroute): find the way to any host. This website is nice to test from multiple locations around the world: http://mtr.guru/
 - [host](https://linux.die.net/man/1/host): resolve dns/ip `host -t ANY github.com`
+- nmap: The famous tool to know which ports are opened: `nmap -sT -vv -p 1-65535 [ip]`
 
 ## System devices
 
