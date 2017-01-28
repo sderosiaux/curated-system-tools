@@ -93,6 +93,9 @@ Flags I grab here and there, not optimal or anything, just to know they exist.
 
 https://wwwx.cs.unc.edu/~sparkst/howto/network_tuning.php
 
+To do some testing, it's possible to alter the quality of the network traffic:
+- `tc qdisc add dev wlan0 root netem loss 10%`
+
 # Resources
 
 http://techblog.netflix.com/2015/11/linux-performance-analysis-in-60s.html
