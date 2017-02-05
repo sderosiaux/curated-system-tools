@@ -44,6 +44,9 @@ $ ngrep -d any "Value" port 2003
 interface: any
 filter: (ip or ip6) and ( port 2003 )
 match: Value
+####
+T 172.17.0.1:54820 -> 172.17.0.2:2003 [AP]
+  com.ctheu.test.Value 42 1486331086.
 ```
 
 ## System devices
