@@ -38,6 +38,13 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 - [traceroute](https://linux.die.net/man/8/traceroute): find the way to any host. This website is nice to test from multiple locations around the world: http://mtr.guru/
 - [host](https://linux.die.net/man/1/host): resolve dns/ip `host -t ANY github.com`
 - nmap: The famous tool to know which ports are opened: `nmap -sT -vv -p 1-65535 [ip]`
+- ngrep: a simple tcpdump with grep features! can listen to specific or all interfaces, given port, and match patterns.
+```
+$ ngrep -d any "Value" port 2003
+interface: any
+filter: (ip or ip6) and ( port 2003 )
+match: Value
+```
 
 ## System devices
 
