@@ -103,6 +103,8 @@ Flags I grab here and there, not optimal or anything, just to know they exist.
 
 https://wwwx.cs.unc.edu/~sparkst/howto/network_tuning.php
 
+- nf_conntrack can be very important too
+
 To do some testing, it's possible to alter the quality of the network traffic:
 - `tc qdisc add dev wlan0 root netem loss 10%`
 
