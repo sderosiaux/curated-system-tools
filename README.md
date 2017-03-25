@@ -32,6 +32,8 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 - [iperf](https://iperf.fr/) : test maximum bandwidth (tcp/udp) `iperf -c server -f m -d`
 - [ulimit](http://ss64.com/bash/ulimit.html): memory, open files, and misc size limits for the user (often, the open file limit must be raised if the server contains hot apps) `ulimit -n 2000000` (open file descriptors)
 
+Another repo with great scripts using ftrace under the hood: https://github.com/brendangregg/perf-tools
+
 ## Network
 
 - [dig](https://linux.die.net/man/1/dig): query dns servers `dig +short github.com` `dig +nocmd github.com any +multiline +noall +answer`
