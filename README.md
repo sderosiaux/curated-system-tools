@@ -131,6 +131,7 @@ ulimit -n 9999999
 
 To do some testing, it's possible to alter the quality of the network traffic:
 - `tc qdisc add dev wlan0 root netem loss 10%`
+- `tc qdisc add dev eth0 root netem delay 80ms 15ms distribution normal`
 
 # Resources
 
