@@ -136,4 +136,4 @@ To do some testing, it's possible to alter the quality of the network traffic:
 # Resources
 
 http://techblog.netflix.com/2015/11/linux-performance-analysis-in-60s.html
-
+http://www.brendangregg.com/blog/2016-12-27/linux-tracing-in-15-minutes.html
