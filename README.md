@@ -51,6 +51,8 @@ match: Value
 T 172.17.0.1:54820 -> 172.17.0.2:2003 [AP]
   com.ctheu.test.Value 42 1486331086.
 ```
+For HTTP requests, it's better to use:
+```ngrep -d any -q port 8081 -W byline```
 
 ## System devices
 
