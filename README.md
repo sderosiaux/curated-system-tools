@@ -54,6 +54,9 @@ T 172.17.0.1:54820 -> 172.17.0.2:2003 [AP]
 For HTTP requests, it's better to use:
 ```ngrep -d any -q port 8081 -W byline```
 
+To monitor multicast:
+```ngrep -q -W byline '' multicast```
+
 ## System devices
 
 - [hdparm](https://linux.die.net/man/8/hdparm) : check drives settings `hdparm -t /dev/sda8`
