@@ -59,7 +59,7 @@ To monitor multicast:
 
 ## System devices
 
-- [hdparm](https://linux.die.net/man/8/hdparm) : check drives settings `hdparm -t /dev/sda8`
+- [hdparm](https://linux.die.net/man/8/hdparm) : check drives settings `hdparm -Tt /dev/sda8`
 - [ethtool](http://linuxcommand.org/man_pages/ethtool8.html) : check the ethernet cards settings (speed, duplex etc. if you have a doubt) `ethtool eth0`
 
 ## Topology
