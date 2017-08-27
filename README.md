@@ -136,6 +136,12 @@ sysctl -w net.ipv4.tcp_slow_start_after_idle="0"
 ulimit -n 9999999
 ```
 
+```
+net.ipv4.ip_local_port_range = 18000    65535
+net.ipv4.netfilter.ip_conntrack_tcp_timeout_time_wait = 1
+```
+http://www.lognormal.com/blog/2012/09/27/linux-tcpip-tuning/
+
 To do some testing, it's possible to alter the quality of the network traffic:
 - `tc qdisc add dev wlan0 root netem loss 10%`
 - `tc qdisc add dev eth0 root netem delay 80ms 15ms distribution normal`
