@@ -40,6 +40,7 @@ Another repo with great scripts using ftrace under the hood: https://github.com/
 - [dig](https://linux.die.net/man/1/dig): query dns servers `dig +short github.com` `dig +nocmd github.com any +multiline +noall +answer`
 - [traceroute](https://linux.die.net/man/8/traceroute): find the way to any host. This website is nice to test from multiple locations around the world: http://mtr.guru/
 - [host](https://linux.die.net/man/1/host): resolve dns/ip `host -t ANY github.com`
+- [lnstat](https://linux.die.net/man/8/lnstat): network stats (arp cache, route cache, nf and ip conntrack entries..): `lnstat -j`
 - nmap: The famous tool to know which ports are opened: `nmap -sT -vv -p 1-65535 [ip]`
 - ngrep: a simple tcpdump with grep features! can listen to specific or all interfaces, given port, and match patterns.
 ```
