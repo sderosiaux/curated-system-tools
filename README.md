@@ -132,6 +132,7 @@ sysctl -w net.ipv4.tcp_tw_recycle="1"
 sysctl -w net.ipv4.tcp_tw_reuse="1"
 sysctl -w vm.min_free_kbytes="65536"
 sysctl -w vm.overcommit_memory="1"
+sysctl -w net.ipv4.tcp_slow_start_after_idle="0"
 ulimit -n 9999999
 ```
 
