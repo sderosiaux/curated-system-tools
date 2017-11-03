@@ -15,6 +15,7 @@ A list of tools to help debugging issues or simply check what's going on in the 
 - `uptime`: checkout 1min/5min/15min load average
 - `strace`: trace system calls and signals a program does (file open, read, stat, mmap, ...). `strace -e open uptime 2>&1`
 - `lsof`: list opened files (and sockets): `lsof -i -n -p`: sockets, `lsof /var` which processes is opening files in `/var`
+- `lsblk`: list info about block devices, useful to see disk not mount but handled differently
 
 ## System resources
 
