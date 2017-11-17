@@ -16,6 +16,7 @@ A list of tools to help debugging issues or simply check what's going on in the 
 - `strace`: trace system calls and signals a program does (file open, read, stat, mmap, ...). `strace -e open uptime 2>&1`
 - `lsof`: list opened files (and sockets): `lsof -i -n -p`: sockets, `lsof /var` which processes is opening files in `/var`
 - `lsblk`: list info about block devices, useful to see disk not mount but handled differently
+- `ping -c 1 $(ifconfig | grep broadcast | cut -d' ' -f6) && arp -a`: ping the broadcast address to list network connected devices
 
 ## System resources
 
