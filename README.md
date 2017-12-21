@@ -28,6 +28,7 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 - [mpstat](http://linuxcommand.org/man_pages/mpstat1.html) : check the stats for each cores, useful to spot single-threaded apps (if unbalanced) `mpstat -P ALL 1`
 - [ifstat](https://linux.die.net/man/1/ifstat) : like iostat, vmstat, but for network interfaces
 - [netstat](https://linux.die.net/man/8/netstat) : details about all the network connections of the system `netstat -putel`. `netstat -anr`
+- ss : an easier netstat? `ss -nlts src :10010` (numeric, listen, tcp, summary)
 - [ss](https://linux.die.net/man/8/netstat) : a bit like netstat, list all sockets (tcp/udp), their state `ss -ta` (TCP, all)
 - [dstat](http://dag.wiee.rs/home-made/dstat/) :  *stat all-in-one
 - [sar](http://linuxcommand.org/man_pages/sar1.html) : monitor network, devices `sar -n DEV 2` All commands in a nice pic: http://www.brendangregg.com/Perf/linux_observability_sar.png
