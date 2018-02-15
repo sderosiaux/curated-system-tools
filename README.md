@@ -45,7 +45,8 @@ Another repo with great scripts using ftrace under the hood: https://github.com/
 - [host](https://linux.die.net/man/1/host): resolve dns/ip `host -t ANY github.com`
 - [lnstat](https://linux.die.net/man/8/lnstat): network stats (arp cache, route cache, nf and ip conntrack entries..): `lnstat -j`
 - nmap: The famous tool to know which ports are opened: `nmap -sT -vv -p 1-65535 [ip]`
-- ngrep: a simple tcpdump with grep features! can listen to specific or all interfaces, given port, and match patterns.
+- tcpdump: listen to what's going on on the network interfaces: `tcpdump -i lo -A dst port 8080` (`-A` for ascii, eg: for HTTP)
+- ngrep: a simpler? tcpdump with grep features! can listen to specific or all interfaces, given port, and match patterns.
 ```
 $ ngrep -d any "Value" port 2003
 interface: any
