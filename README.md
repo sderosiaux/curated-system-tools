@@ -101,6 +101,9 @@ A tons of good links and presentations here: http://www.brendangregg.com/linuxpe
 
 ## Network tuning
 
+Enable BBR algorithm for TCP: `sysctl -w net.ipv4.tcp_congestion_control=bbr` to get better throughput when congestion occurs.
+And probably `sysctl -w net.core.default_qdisc=fq` with that.
+
 Flags I grab here and there, not optimal or anything, just to know they exist.
 
 - `net.ipv4.tcp_slow_start_after_idle = 0`
