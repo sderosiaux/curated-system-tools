@@ -34,6 +34,7 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 - [sar](http://linuxcommand.org/man_pages/sar1.html) : monitor network, devices `sar -n DEV 2` All commands in a nice pic: http://www.brendangregg.com/Perf/linux_observability_sar.png
 - [iotop](http://guichaz.free.fr/iotop/) : top, with i/o !
 - [iperf](https://iperf.fr/) : test maximum bandwidth (tcp/udp) `iperf -c server -f m -d`
+- [netperf](https://hewlettpackard.github.io/netperf/doc/netperf.html): in the same vein, more complete
 - [ulimit](http://ss64.com/bash/ulimit.html): memory, open files, and misc size limits for the user (often, the open file limit must be raised if the server contains hot apps) `ulimit -n 2000000` (open file descriptors)
 
 Another repo with great scripts using ftrace under the hood: https://github.com/brendangregg/perf-tools
@@ -41,7 +42,7 @@ Another repo with great scripts using ftrace under the hood: https://github.com/
 ## Network
 
 - [dig](https://linux.die.net/man/1/dig): query dns servers `dig +short github.com` `dig +nocmd github.com any +multiline +noall +answer`
-- [traceroute](https://linux.die.net/man/8/traceroute): find the way to any host. This website is nice to test from multiple locations around the world: http://mtr.guru/
+- [traceroute](https://linux.die.net/man/8/traceroute): measure and display packets' routes to any host across a network. This website is nice to test from multiple locations around the world: http://mtr.guru/
 - [host](https://linux.die.net/man/1/host): resolve dns/ip `host -t ANY github.com`
 - [lnstat](https://linux.die.net/man/8/lnstat): network stats (arp cache, route cache, nf and ip conntrack entries..): `lnstat -j`
 - nmap: The famous tool to know which ports are opened: `nmap -sT -vv -p 1-65535 [ip]`
