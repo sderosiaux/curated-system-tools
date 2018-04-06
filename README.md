@@ -24,6 +24,7 @@ List of tools used to look after system performances (mem, cpu, disks, network, 
 
 - [sysdig](http://www.sysdig.org/) : a console ui to monitor (live and snapshots) several aspects of the system `sudo sysdig 'proc.name=java' -w ~/sysdig.scap`
 - [iostat](http://linuxcommand.org/man_pages/iostat1.html) : i/o accesses `iostat -m -x -d 2`
+- ioping : test disks latency `ioping -c 10 .` and iops: `ioping -R .` or `-RL` for sequential
 - [vmstat](http://linuxcommand.org/man_pages/vmstat8.html) : mem/swap/cpu `vmstat 1`
 - [mpstat](http://linuxcommand.org/man_pages/mpstat1.html) : check the stats for each cores, useful to spot single-threaded apps (if unbalanced) `mpstat -P ALL 1`
 - [ifstat](https://linux.die.net/man/1/ifstat) : like iostat, vmstat, but for network interfaces
