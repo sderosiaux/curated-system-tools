@@ -108,7 +108,7 @@ And probably `sysctl -w net.core.default_qdisc=fq` with that.
 
 Flags I grab here and there, not optimal or anything, just to know they exist.
 
-- `net.ipv4.tcp_slow_start_after_idle = 0`
+- `net.ipv4.tcp_slow_start_after_idle = 0` for long TCP connection, avoid slow start once again
 - `net.core.netdev_max_backlog = 5000`
 - `net.ipv4.tcp_no_metrics_save = 1`
 - `net.ipv4.tcp_sack = 1`
