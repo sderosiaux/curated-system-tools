@@ -49,6 +49,7 @@ Another repo with great scripts using ftrace under the hood: https://github.com/
 - [conntrack](): Connection tracking `conntrack -C`: how many connections in the table
 - nmap: The famous tool to know which ports are opened: `nmap -sT -vv -p 1-65535 [ip]`
 - tcpdump: listen to what's going on on the network interfaces: `tcpdump -i lo -A dst port 8080` (`-A` for ascii, eg: for HTTP)
+- [tshark](https://www.wireshark.org/docs/man-pages/tshark.html): a "better" tcpdump which understands protocols
 - ngrep: a simpler? tcpdump with grep features! can listen to specific or all interfaces, given port, and match patterns.
 ```
 $ ngrep -d any "Value" port 2003
